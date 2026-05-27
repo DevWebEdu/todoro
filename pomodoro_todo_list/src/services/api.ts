@@ -35,7 +35,7 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
       },
     });
   } catch {
-    throw new Error('No se pudo conectar con el servidor. Asegúrate de que el backend esté corriendo en localhost:3000');
+    throw new Error('No se pudo conectar con el servidor.');
   }
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
