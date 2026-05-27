@@ -1,5 +1,5 @@
 node_modules/
 dist/
 .env
-uploads/
+pomodoro_todo_list_b/uploads/
 *.local
